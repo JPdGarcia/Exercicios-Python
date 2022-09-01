@@ -2,10 +2,9 @@
 
 
 print("Vamos calcular a multa que joão Papo-de-Pescador deverá pagar ")
-pesoStr = input("Por favor digite o peso de peixe em kg que João pescou: ")
+peso = float(input("Por favor digite o peso de peixe em kg que João pescou: "))
 
-if(pesoStr>"50"):
-    peso = float(pesoStr)
+if(peso>=50):
     excesso = peso - 50
     multa = excesso*4
 
