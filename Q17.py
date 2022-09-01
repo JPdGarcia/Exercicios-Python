@@ -34,4 +34,4 @@ print("Comprando apenas latas de tinda de 18L você precisara de ", latasReal, "
 print("______________________________________________________________________________________________________________")
 print("Comprando apenas galões de 3,6L você precisara de ", galoesReal,"galões", "e isso vai custar: R$", pGaloes )
 print("______________________________________________________________________________________________________________")
-print("Comprando latas e galões a melhor composição é: ", latasFinal, "e ", galoesFinal, "e isso vai custar R$", precoFinal)
+print("Comprando latas e galões a melhor composição é: ", latasFinal, "latas e ", galoesFinal, "galões e isso vai custar R$", precoFinal)
