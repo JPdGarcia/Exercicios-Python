@@ -6,7 +6,7 @@ downloadStr = input("Qual o tamanho do aquivo que você pretende baixar (em MB)?
 velocidadeStr = input("Qual a sua velocidade de download (em mbps)?")
 
 download = float(downloadStr)
-velocidade = float(velocidadeStr)
+velocidade = float(velocidadeStr)/8
 
 tempoSeg = download/velocidade
 tempoMin = tempoSeg//60
