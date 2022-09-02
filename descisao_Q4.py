@@ -2,7 +2,7 @@
 
 letra = input("Digite uma letra do alfabeto: ")
 
-if(letra.lower() == "a" or letra.lower()=="e" or letra.lower()=="i" or letra.lower()=="o" or letra.lower()=="u"):
+if(letra in "aeiou"):
     print("A letra digitada é uma vogal")
 else:
     print("A letra digitada é uma consoante")
