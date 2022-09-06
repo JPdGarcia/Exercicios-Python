@@ -6,7 +6,7 @@
 #Salário Bruto acima de 2500 - desconto de 20% Imprima na tela as informações, dispostas conforme o exemplo abaixo. No exemplo o valor da hora é 5 e a quantidade de hora é 220.
 
 
-print("Vamos calcumar o seu salario mensal ")
+print("Vamos calcular o seu salario mensal ")
 porHora = float(input("Quanto você ganha por hora trabalhada? "))
 horas = float(input("Quantas horas você trabalha por mês? "))
 
@@ -36,8 +36,9 @@ elif(salario<1500):
     
     print("------------------------------------------------")
     print("Salário Bruto: (",porHora,"*",horas,"):",salario)
-    print("(-) IR (Isento): R$",ir)
+    print("(-) IR (5%): R$",ir)
     print("(-) INSS ( 10%): R$",inss)
+    print("(-) Sindicato (3%): R$",sindicato)
     print("FGTS (11%): R$",fgts)
     print("Total de descontos: R$:",ir+inss+sindicato)
     print("Salário Liquido: R$",liquido)
@@ -51,8 +52,9 @@ elif(salario<2500):
     
     print("------------------------------------------------")
     print("Salário Bruto: (",porHora,"*",horas,"):",salario)
-    print("(-) IR (Isento): R$",ir)
+    print("(-) IR (10%): R$",ir)
     print("(-) INSS ( 10%): R$",inss)
+    print("(-) Sindicato (3%): R$",sindicato)
     print("FGTS (11%): R$",fgts)
     print("Total de descontos: R$:",ir+inss+sindicato)
     print("Salário Liquido: R$",liquido)
@@ -66,8 +68,9 @@ elif(salario>2500):
     
     print("------------------------------------------------")
     print("Salário Bruto: (",porHora,"*",horas,"):",salario)
-    print("(-) IR (Isento): R$",ir)
+    print("(-) IR (20%): R$",ir)
     print("(-) INSS ( 10%): R$",inss)
+    print("(-) Sindicato (3%): R$",sindicato)
     print("FGTS (11%): R$",fgts)
     print("Total de descontos: R$:",ir+inss+sindicato)
     print("Salário Liquido: R$",liquido)
