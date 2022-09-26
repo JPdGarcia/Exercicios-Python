@@ -7,6 +7,6 @@ for c in range(3):
 
 n=0
 for i in range(3):
-    if lista[n] in "aeiou":
+    if not lista[n] in "aeiou":
         print(lista[n])
         n=n+1
