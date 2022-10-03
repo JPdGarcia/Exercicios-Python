@@ -1,3 +1,6 @@
+from fileinput import filename
+from multiprocessing.sharedctypes import Value
+from optparse import Values
 from flask import Flask
 from flask import render_template
 from flask import url_for, redirect
@@ -10,12 +13,24 @@ app = Flask(__name__)
 def index():
     print("Hello print")
     return "Hello return"
+@app.route('/ola/<nome>')
+def ola(nome):
+    return f'Ola {nome}'
+
+@app.route('/jp')
+def jp():
+    return 'Ola deu certo!'
 
 produtos = {}
 serie = pd.DataFrame()
 
 @app.route('/lista')
 def listar():
+    return produtos
+
+@app.route('/adicionar/<item>/<valor>')
+def adicionar(item,valor):
+    produtos[item] = float(valor)
     return produtos
 
 @app.route('/cadastro')
@@ -29,5 +44,6 @@ def cadastro():
     return redirect(url_for('static', filename='formulario.html'))
 
     
+
 if __name__ == "__main__":
     app.run()
