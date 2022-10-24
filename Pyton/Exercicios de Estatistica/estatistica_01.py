@@ -12,7 +12,7 @@
 
 import pandas as pd
 
-df = pd.read_csv('João Garcia\Exercicios de Estatistica\Estatistica_gama.csv', decimal=",")
+df = pd.read_csv('C:\Users\jop_garcia\Documents\Gama\Pyton\Exercicios de Estatistica\Estatistica_gama.csv', decimal=",")
 
 
 print(f'''

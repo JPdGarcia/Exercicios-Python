@@ -24,9 +24,7 @@ def jp():
 produtos = {}
 serie = pd.DataFrame()
 
-@app.route('/lista')
-def listar():
-    return produtos
+
 
 @app.route('/adicionar/<item>/<valor>')
 def adicionar(item,valor):
@@ -37,11 +35,13 @@ def adicionar(item,valor):
 def cadastro():
     argumentos = request.args.to_dict()
     print(argumentos)
-    produto = argumentos['produto']
-    preço = argumentos['preço']
-    serie[produto] = preço
-    serie.to_csv('produtos.csv', header=False)
-    return redirect(url_for('static', filename='formulario.html'))
+    #produto = argumentos['produto']
+    #preco = argumentos['preco']
+    #serie[produto] = preco
+    #serie.to_csv('produtos.csv', header=False)
+    
+    #return redirect(url_for('static', filename='formulario.html'))
+    return argumentos
 
     
 
