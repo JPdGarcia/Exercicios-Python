@@ -17,3 +17,17 @@
 # nós.
 # Tempo estimado: 10 minutos. Dificuldade: média. A pessoa sabe ler o script do
 # MongoDB? Consegue ver e traduzir o que precisamos para o Python?
+
+import pymongo
+
+def ajustar_estoque():
+    sku = ""
+    estoque = 0
+    client = pymongo.MongoClient("mongodb://localhost/bancoexemplo")
+    db = client["usuario_test"]
+    collection = db["bancoexemplo"]
+    update = collection.update_one({"sku": sku}, {"$inc": estoque})
+
+    return update
+
+ajustar_estoque()
