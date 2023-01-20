@@ -1,0 +1,9 @@
+use('alunos');
+
+db.Alunos.insertMany([
+    {"nome":"Anderson"},
+    {"nome":"João Paulo"},
+    {"nome":"Fernando"},
+    {"nome":"Edson"},
+    {"nome":"Eron"}
+]);
