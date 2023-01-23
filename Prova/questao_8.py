@@ -38,7 +38,7 @@ def incrementa():
 def delete():
     global contador
     contador = 0
-    return contador
+    return jsonify(contador), 202
 
 
 
